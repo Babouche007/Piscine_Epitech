@@ -2,5 +2,5 @@
 
 while read line
 do
-	echo "$line" | tr '[a-z]' "$2"
+	echo "$line" | tr "$2" "[a-z]"
 done < "$1"
